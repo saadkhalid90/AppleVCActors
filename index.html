@@ -1,0 +1,51 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Apple Value Chain Actors Map</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+  <script src="legends.js"></script>
+  <script src="voronoi.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <style media="screen">
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .distLabel {
+      font-size: 11px;
+      font-weight: 300;
+    }
+    .title {
+      font-size: 20px;
+      fill: #212121;
+      font-weight: 400;
+    }
+    .sub-title {
+      font-size: 12px;
+      fill: #424242;
+      font-weight: 300;
+    }
+    .circLegGroup, .contLegGroup {
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="appVCActorControl">
+    <select id="AppleVCActors">
+      <option value="Farmer">Farmer</option>
+      <option value="Cold Storage">Cold Storage</option>
+      <option value="Pre-harvest Contractor">Pre-harvest Contractor</option>
+      <option value="Commission Agent">Commission Agent</option>
+      <option value="Retailer">Retailer</option>
+      <option value="Wholesaler">Wholesaler</option>
+    </select>
+  </div>
+  <div class="mapContain">
+    <svg class ="mapSVG" width = "500px" height = "500px" ></svg>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
